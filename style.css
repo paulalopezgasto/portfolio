@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-  color: #f18f01;
+  color: #f5400;
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -23,7 +23,7 @@ header h1 {
 nav a {
   margin: 0 1rem;
   text-decoration: underline;
-  color: #f18f01;
+  color: #f5400;
   font-size: 1.2rem;
 }
 

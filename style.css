@@ -5,13 +5,13 @@
   box-sizing: border-box;
 }
 
-.body {
+/*.body {
   font-family: 'Crimson Text', sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
-}
+}*/
 
 /* Top Navigation */
 .top-nav {
@@ -30,11 +30,12 @@
 .logo span {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #0a2463;
+  color: #37424A;
 }
 
 .top-nav nav a {
-  color: #0a2463;
+  font-family: 'Merriweather Sans', Helvetica, sans-serif;
+  color: #37424A;
   text-decoration: none;
   font-weight: 300;
   transition: color 0.3s ease;
@@ -63,16 +64,15 @@
 }
 
 .main-headline {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Yeseva One', Georgia, serif;
   font-size: 5rem;
   font-weight: extra bold;
-  color: #ff5400;
-  letter-spacing: 1px; 
+  color: #ff5400; 
   margin-bottom: 10px;
 }
 
 .sub-headline {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Merriweather Sans', Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: 300;
   color: #ff5400;
@@ -94,6 +94,7 @@
 }
 
 .project-list {
+  font-family: 'Merriweather Sans', Helvetica, sans-serif;
   list-style: none;
   font-size: 1rem;
   font-weight: 300;
@@ -112,6 +113,7 @@
 }
 
 .project-list strong {
+  font-family: 'Merriweather Sans', Helvetica, sans-serif;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -137,14 +139,15 @@
 }
 
 .section-title {
+  font-family: 'Yeseva One', Georgia, serif;
   font-size: 1.8rem;
   font-weight: bold;
   color: #ff5400;
-  letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
 .personal-text {
+  font-family: 'Merriweather Sans', Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: normal;
@@ -164,6 +167,7 @@
 }
 
 .email {
+  font-family: 'Merriweather Sans', Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #ff5400;

@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: 'Crimson Text', sans-serif;
   background-color: #f9f9f9;
-  color: #ff5400;
+  color: #333;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -50,23 +50,24 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 80px 20px 40px; /* Top padding for fixed header */
-  text-align: center;
 }
 
 /* Hero Section */
 .hero {
-  margin-top: 120px;
-  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
 }
 
 .main-headline {
   font-family: 'Helvetica', sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: extra bold;
   color: #ff5400;
-  letter-spacing: 1px; /* Adjustable character spacing */
+  letter-spacing: 1px; 
   margin-bottom: 10px;
 }
 
@@ -80,34 +81,59 @@ body {
 
 /* Projects Section */
 .projects {
-  margin-bottom: 80px;
+  margin: 80px 0;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.projects.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-list {
   list-style: none;
   font-size: 1rem;
   font-weight: 300;
-  color: #0a2463;
   line-height: 2;
 }
 
 .project-list li {
   margin-bottom: 8px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.project-list li:hover {
+  color: #ff5400;
+  transform: translateX(5px);
 }
 
 .project-list strong {
-  color: #0a2463;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-.project-list:hover {
+.project-list li:hover strong {
   color: #ff5400;
 }
 
+
 /* Personal Section */
 .personal-section {
-  margin-bottom: 80px;
-  max-width: 100px;
+  margin-bottom: 60px;
+  max-width: 600px;
+  padding: 0 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.personal-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .section-title {
@@ -121,14 +147,20 @@ body {
 .personal-text {
   font-size: 1rem;
   font-weight: 300;
-  color: #0a2463;
   letter-spacing: normal;
-  line-height: 1.6;
 }
 
 /* Contact Section */
 .contact {
-  margin-top: 40px;
+  margin: 40px 0 60px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.contact.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .email {
@@ -137,25 +169,33 @@ body {
   color: #ff5400;
 }
 
-/* Responsive Design */ 
+/* Responsive Design */
 @media (max-width: 768px) {
   .top-nav {
     padding: 15px 20px;
   }
   
   .main-headline {
-    font-size: 6rem;
+    font-size: 3rem;
   }
   
   .sub-headline {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   
-  /*.homepage-content {
-    padding: 60px 15px 30px;
+  .hero {
+    padding: 0 15px;
+  }
+  
+  .projects, .personal-section {
+    padding: 0 15px;
   }
   
   .project-list {
     font-size: 0.9rem;
-  }*/
+  }
+  
+  .project-list li:hover {
+    transform: translateX(3px);
+  }
 }

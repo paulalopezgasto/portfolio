@@ -63,7 +63,7 @@ body {
 .main-headline {
   margin-top: 80px;
   font-family: 'Helvetica', sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #ff5400;
   letter-spacing: 1px; /* Adjustable character spacing */
@@ -149,7 +149,7 @@ body {
   color: #0a2463;
 }
 
-/* Responsive Design */
+/* Responsive Design 
 @media (max-width: 768px) {
   .top-nav {
     padding: 15px 20px;
@@ -170,4 +170,4 @@ body {
   .project-list {
     font-size: 0.9rem;
   }
-}
+}*/

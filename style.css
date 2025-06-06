@@ -57,14 +57,14 @@ body {
 
 /* Hero Section */
 .hero {
-  margin-bottom: 60px;
+  margin-top: 120px;
+  margin-bottom: 80px;
 }
 
 .main-headline {
-  margin-top: 80px;
   font-family: 'Helvetica', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 6rem;
+  font-weight: extra bold;
   color: #ff5400;
   letter-spacing: 1px; /* Adjustable character spacing */
   margin-bottom: 10px;
@@ -72,7 +72,7 @@ body {
 
 .sub-headline {
   font-family: 'Helvetica', sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 300;
   color: #ff5400;
   letter-spacing: normal;
@@ -87,7 +87,7 @@ body {
   list-style: none;
   font-size: 1rem;
   font-weight: 300;
-  color: #ff5400;
+  color: #0a2463;
   line-height: 2;
 }
 
@@ -96,30 +96,18 @@ body {
 }
 
 .project-list strong {
-  color: #ff5400;
+  color: #0a2463;
   font-weight: 600;
 }
 
-/* Award Item Styling
-.award-item {
-  position: relative;
-}
-
-.award-note {
-  display: block;
-  font-size: 0.9rem;
+.project-list:hover {
   color: #ff5400;
-  font-style: italic;
-  margin-top: 4px;
-  /* This is where you can add handwritten styling later */
 }
-
-*/
 
 /* Personal Section */
 .personal-section {
   margin-bottom: 80px;
-  max-width: 600px;
+  max-width: 100px;
 }
 
 .section-title {
@@ -133,7 +121,7 @@ body {
 .personal-text {
   font-size: 1rem;
   font-weight: 300;
-  color: #ff5400;
+  color: #0a2463;
   letter-spacing: normal;
   line-height: 1.6;
 }
@@ -145,29 +133,29 @@ body {
 
 .email {
   font-size: 1rem;
-  font-weight: 300;
-  color: #0a2463;
+  font-weight: 600;
+  color: #ff5400;
 }
 
-/* Responsive Design 
+/* Responsive Design */ 
 @media (max-width: 768px) {
   .top-nav {
     padding: 15px 20px;
   }
   
   .main-headline {
-    font-size: 2.5rem;
+    font-size: 6rem;
   }
   
   .sub-headline {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   
-  .homepage-content {
+  /*.homepage-content {
     padding: 60px 15px 30px;
   }
   
   .project-list {
     font-size: 0.9rem;
-  }
-}*/
+  }*/
+}

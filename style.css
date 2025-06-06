@@ -1,32 +1,168 @@
-body {
+/* Reset and Base Styles */
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: #f9f9f9;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
 }
 
-header {
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Top Navigation */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+  z-index: 100;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.top-nav nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.top-nav nav a:hover {
+  color: #ff5400;
+}
+
+/* Main Content Container */
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 20px 40px; /* Top padding for fixed header */
   text-align: center;
 }
 
-header h1 {
-  color: #ff5400;
+/* Hero Section */
+.hero {
+  margin-bottom: 60px;
+}
+
+.main-headline {
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-nav a {
-  margin: 0 1rem;
-  text-decoration: underline;
   color: #ff5400;
-  font-size: 1.2rem;
+  letter-spacing: 0.1em; /* Adjustable character spacing */
+  margin-bottom: 10px;
 }
 
-nav a:hover {
-  text-decoration: none;
+.sub-headline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #666;
+  letter-spacing: normal;
+}
+
+/* Projects Section */
+.projects {
+  margin-bottom: 80px;
+}
+
+.project-list {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #666;
+  line-height: 2;
+}
+
+.project-list li {
+  margin-bottom: 8px;
+}
+
+.project-list strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Award Item Styling */
+.award-item {
+  position: relative;
+}
+
+.award-note {
+  display: block;
+  font-size: 0.9rem;
+  color: #ff5400;
+  font-style: italic;
+  margin-top: 4px;
+  /* This is where you can add handwritten styling later */
+}
+
+/* Personal Section */
+.personal-section {
+  margin-bottom: 60px;
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 0.05em; /* Adjustable character spacing */
+  margin-bottom: 20px;
+}
+
+.personal-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #666;
+  letter-spacing: normal;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+  margin-top: 40px;
+}
+
+.email {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 15px 20px;
+  }
+  
+  .main-headline {
+    font-size: 2.5rem;
+  }
+  
+  .sub-headline {
+    font-size: 1.2rem;
+  }
+  
+  .homepage-content {
+    padding: 60px 15px 30px;
+  }
+  
+  .project-list {
+    font-size: 0.9rem;
+  }
 }

@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Crimson Text', sans-serif;
   background-color: #f9f9f9;
-  color: #333;
+  color: #ff5400;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -30,11 +30,11 @@ body {
 .logo span {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #333;
+  color: #0a2463;
 }
 
 .top-nav nav a {
-  color: #333;
+  color: #0a2463;
   text-decoration: none;
   font-weight: 300;
   transition: color 0.3s ease;
@@ -61,17 +61,19 @@ body {
 }
 
 .main-headline {
-  font-size: 4rem;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 3rem;
   font-weight: bold;
   color: #ff5400;
-  letter-spacing: 0.1em; /* Adjustable character spacing */
+  letter-spacing: 1px; /* Adjustable character spacing */
   margin-bottom: 10px;
 }
 
 .sub-headline {
-  font-size: 1.5rem;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1rem;
   font-weight: 300;
-  color: #666;
+  color: #ff5400;
   letter-spacing: normal;
 }
 
@@ -84,7 +86,7 @@ body {
   list-style: none;
   font-size: 1rem;
   font-weight: 300;
-  color: #666;
+  color: #ff5400;
   line-height: 2;
 }
 
@@ -93,11 +95,11 @@ body {
 }
 
 .project-list strong {
-  color: #333;
+  color: #ff5400;
   font-weight: 600;
 }
 
-/* Award Item Styling */
+/* Award Item Styling
 .award-item {
   position: relative;
 }
@@ -111,24 +113,26 @@ body {
   /* This is where you can add handwritten styling later */
 }
 
+*/
+
 /* Personal Section */
 .personal-section {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   max-width: 600px;
 }
 
 .section-title {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #333;
-  letter-spacing: 0.05em; /* Adjustable character spacing */
+  color: #ff5400;
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
 
 .personal-text {
   font-size: 1rem;
   font-weight: 300;
-  color: #666;
+  color: #ff5400;
   letter-spacing: normal;
   line-height: 1.6;
 }
@@ -141,7 +145,7 @@ body {
 .email {
   font-size: 1rem;
   font-weight: 300;
-  color: #666;
+  color: #0a2463;
 }
 
 /* Responsive Design */
